@@ -39,7 +39,8 @@ body{margin:0;
      font-family:"Segoe UI",system-ui,Arial,sans-serif;font-size:15px;
      background:var(--bg);color:var(--ink);
      min-height:100vh}
-header{background:linear-gradient(135deg,var(--navy),var(--dark));color:white;
+header{background:linear-gradient(135deg,var(--navy),var(--dark));
+       color:white;
        padding:18px max(18px,calc((100% - 860px)/2));
        display:flex;
        justify-content:space-between;
@@ -97,7 +98,9 @@ button{font:600 14px inherit;
        transition:filter .15s,transform .1s}
 button:hover{filter:brightness(1.06)}
 button:active{transform:scale(.97)}
-.menu button.active,button.on{background:var(--active);border-color:var(--active);color:white}
+.menu button.active,button.on{background:var(--active);
+                              border-color:var(--active);
+                              color:white}
 button.main-btn{background:linear-gradient(135deg,var(--red),var(--dark));
                 color:white;
                 border:0;
@@ -181,18 +184,32 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);
 .hint{background:var(--soft);
       border-left:4px solid var(--accent);
       border-radius:10px;
-      padding:10px 12px;font-size:13px;
-      margin-top:12px;color:var(--muted);
+      padding:10px 12px;
+      font-size:13px;
+      margin-top:12px;
+      color:var(--muted);
       line-height:1.7}
-.empty{color:var(--muted);padding:8px 0}
-.login-box{max-width:440px;margin:24px auto}
-.big-stat{font-size:30px;font-weight:800;color:var(--accent);margin:4px 0 12px}
-.list-area:empty:after{content:"No records available.";display:block;color:var(--muted);padding:8px 0}
-.list-area a{color:var(--accent);font-weight:700;text-decoration:none}
+.empty{color:var(--muted);
+       padding:8px 0}
+.login-box{max-width:440px;
+           margin:24px auto}
+.big-stat{font-size:30px;
+          font-weight:800;
+          color:var(--accent);
+          margin:4px 0 12px}
+.list-area:empty:after{content:"No records available.";
+                       display:block;
+                       color:var(--muted);
+                       padding:8px 0}
+.list-area a{color:var(--accent);
+             font-weight:700;
+             text-decoration:none}
 .list-area a:hover{text-decoration:underline}
 @media(max-width:560px){
-  header{padding:16px;border-radius:0 0 18px 18px}
-  header h1{font-size:17px;letter-spacing:2px}
+  header{padding:16px;
+         border-radius:0 0 18px 18px}
+  header h1{font-size:17px;
+            letter-spacing:2px}
   main{padding:14px 12px 28px}
   .menu button{flex:1 1 auto}
   .line{align-items:flex-start}
