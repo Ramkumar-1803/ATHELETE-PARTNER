@@ -98,12 +98,35 @@ button{font:600 14px inherit;
 button:hover{filter:brightness(1.06)}
 button:active{transform:scale(.97)}
 .menu button.active,button.on{background:var(--active);border-color:var(--active);color:white}
-button.main-btn{background:linear-gradient(135deg,var(--red),var(--dark));color:white;border:0;padding:10px 20px}
-button.red{background:transparent;color:var(--danger);border-color:var(--danger)}
-.logout-btn{background:var(--cream);color:var(--dark);border:0}
+button.main-btn{background:linear-gradient(135deg,var(--red),var(--dark));
+                color:white;
+                border:0;
+                padding:10px 20px}
+button.red{background:transparent;
+           color:var(--danger);
+           border-color:var(--danger)}
+.logout-btn{background:var(--cream);
+            color:var(--dark);
+            border:0}
 .full{width:100%}
-label{display:block;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:8px}
-input,select,textarea{display:block;width:100%;padding:11px 12px;margin:5px 0 12px;font:14px inherit;font-family:inherit;font-size:14px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px}
+label{display:block;
+      font-size:12px;
+      font-weight:700;
+      color:var(--muted);
+      text-transform:uppercase;
+      letter-spacing:.5px;
+      margin-top:8px}
+input,select,textarea{display:block;
+                      width:100%;
+                      padding:11px 12px;
+                      margin:5px 0 12px;
+                      font:14px inherit;
+                      font-family:inherit;
+                      font-size:14px;
+                      background:var(--card);
+                      color:var(--ink);
+                      border:1px solid var(--line);
+                      border-radius:10px}
 textarea{resize:vertical}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
 .numbers{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:14px}
