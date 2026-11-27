@@ -21,10 +21,17 @@
 }
 :root[data-theme="dark"] {
   color-scheme:dark;
-  --bg:var(--navy); --card:#123e53; --ink:var(--cream);
-  --muted:#d5dce0; --line:#456575; --soft:#214f65;
-  --accent:var(--sky); --active:var(--red); --good:var(--sky);
-  --danger:#f0a0a0; --shadow:0 3px 14px rgba(0,0,0,.25);
+  --bg:var(--navy);
+  --card:#123e53;
+  --ink:var(--cream);
+  --muted:#d5dce0;
+  --line:#456575;
+  --soft:#214f65;
+  --accent:var(--sky);
+  --active:var(--red);
+  --good:var(--sky);
+  --danger:#f0a0a0; 
+  --shadow:0 3px 14px rgba(0,0,0,.25);
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
