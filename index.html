@@ -55,9 +55,18 @@
 
     <div class="page" data-page="student-home">
       <div class="numbers">
-        <div class="num"><b id="studentLatestScore">0</b><small>Latest score</small></div>
-        <div class="num"><b id="studentAttendance">0%</b><small>Attendance</small></div>
-        <div class="num"><b id="studentScoreCount">0</b><small>Score records</small></div>
+        <div class="num">
+          <b id="studentLatestScore">0</b>
+          <small>Latest score</small>
+        </div>
+        <div class="num">
+          <b id="studentAttendance">0%</b>
+          <small>Attendance</small>
+        </div>
+        <div class="num">
+          <b id="studentScoreCount">0</b>
+          <small>Score records</small>
+        </div>
       </div>
       <div class="box">
         <h2>Performance history</h2>
@@ -117,7 +126,10 @@
           <b id="coachStudentCount">0</b>
           <small>My students</small>
         </div>
-        <div class="num"><b id="coachSport">—</b><small>Sport</small></div>
+        <div class="num">
+          <b id="coachSport">—</b>
+          <small>Sport</small>
+        </div>
       </div>
       <div class="box">
         <h2>My students</h2>
@@ -128,18 +140,30 @@
     <div class="page" data-page="coach-register" hidden>
       <div class="box">
         <h2>Register student</h2>
-        <label for="rName">Full name</label><input id="rName" placeholder="Student name"></input>
-        <label for="rAge">Age</label><input id="rAge" type="number" min="5" max="100"></input>
+        <label for="rName">Full name</label>
+        <input id="rName" placeholder="Student name"></input>
+        <label for="rAge">Age</label>
+        <input id="rAge" type="number" min="5" max="100"></input>
         <label for="rSport">Sport</label>
         <select id="rSport">
-          <option>Football</option><option>Cricket</option><option>Kabaddi</option>
-          <option>Volleyball</option><option>Running / Track</option><option>Javelin</option>
-          <option>Shot Put</option><option>Long Jump</option><option>High Jump</option>
+          <option>Football</option>
+          <option>Cricket</option>
+          <option>Kabaddi</option>
+          <option>Volleyball</option>
+          <option>Running / Track</option>
+          <option>Javelin</option>
+          <option>Shot Put</option>
+          <option>Long Jump</option>
+          <option>High Jump</option>
         </select>
-        <label for="rHeight">Height (cm)</label><input id="rHeight" type="number" min="1">
-        <label for="rWeight">Weight (kg)</label><input id="rWeight" type="number" min="1" step="0.1">
-        <label for="rUser">Student username</label><input id="rUser" autocomplete="off">
-        <label for="rPass">Student password</label><input id="rPass" type="password" autocomplete="new-password">
+        <label for="rHeight">Height (cm)</label>
+        <input id="rHeight" type="number" min="1"></input>
+        <label for="rWeight">Weight (kg)</label>
+        <input id="rWeight" type="number" min="1" step="0.1"></input>
+        <label for="rUser">Student username</label>
+        <input id="rUser" autocomplete="off"></input>
+        <label for="rPass">Student password</label>
+        <input id="rPass" type="password" autocomplete="new-password"></input>
         <button class="main-btn" id="registerStudentBtn">Register student</button>
       </div>
     </div>
@@ -155,10 +179,14 @@
     <div class="page" data-page="coach-score" hidden>
       <div class="box">
         <h2>Add performance score</h2>
-        <label for="sStudent">Student</label><select id="sStudent"></select>
-        <label for="sScore">Score (0 to 100)</label><input id="sScore" type="number" min="0" max="100"></input>
-        <label for="sDate">Date</label><input id="sDate" type="date"></input>
-        <label for="sNote">Note</label><input id="sNote" placeholder="Performance note"></input>
+        <label for="sStudent">Student</label>
+        <select id="sStudent"></select>
+        <label for="sScore">Score (0 to 100)</label>
+        <input id="sScore" type="number" min="0" max="100"></input>
+        <label for="sDate">Date</label>
+        <input id="sDate" type="date"></input>
+        <label for="sNote">Note</label>
+        <input id="sNote" placeholder="Performance note"></input>
         <button class="main-btn" id="saveScoreBtn">Save score</button>
       </div>
     </div>
@@ -177,8 +205,10 @@
       </div>
       <div class="box">
         <h2>Assign exercise</h2>
-        <label for="eTitle">Exercise name</label><input id="eTitle" placeholder="Exercise title"></input>
-        <label for="eLink">Video link (optional)</label><input id="eLink" type="url" placeholder="https://..."></input>
+        <label for="eTitle">Exercise name</label>
+        <input id="eTitle" placeholder="Exercise title"></input>
+        <label for="eLink">Video link (optional)</label>
+        <input id="eLink" type="url" placeholder="https://..."></input>
         <button class="main-btn" id="assignExerciseBtn">Send exercise</button>
       </div>
       <div class="box">
@@ -193,13 +223,17 @@
         <textarea id="coachNoticeText" rows="3" placeholder="Write a notice..."></textarea>
         <button class="main-btn" id="coachPostNoticeBtn">Post notice</button>
       </div>
-      <div class="box"><h2>Previous notices</h2><div id="coachNoticeList" class="list-area"></div></div>
+      <div class="box">
+        <h2>Previous notices</h2>
+        <div id="coachNoticeList" class="list-area"></div>
+      </div>
     </div>
 
     <div class="page" data-page="coach-password" hidden>
       <div class="box">
         <h2>Change password</h2>
-        <label for="coachNewPassword">New password</label><input id="coachNewPassword" type="password"></input>
+        <label for="coachNewPassword">New password</label>
+        <input id="coachNewPassword" type="password"></input>
         <button class="save-password">Save</button>
       </div>
     </div>
@@ -220,35 +254,67 @@
 
     <div class="page" data-page="director-home">
       <div class="numbers">
-        <div class="num"><b id="directorStudentCount">0</b><small>Students</small></div>
-        <div class="num"><b id="directorCoachCount">0</b><small>Coaches</small></div>
-        <div class="num"><b id="directorPresentCount">0</b><small>Present today</small></div>
+        <div class="num">
+          <b id="directorStudentCount">0</b>
+          <small>Students</small>
+        </div>
+        <div class="num">
+          <b id="directorCoachCount">0</b>
+          <small>Coaches</small>
+        </div>
+        <div class="num">
+          <b id="directorPresentCount">0</b>
+          <small>Present today</small>
+        </div>
       </div>
-      <div class="box"><h2>Students by sport</h2><div id="sportSummary" class="list-area"></div></div>
-      <div class="box"><h2>Top performers</h2><div id="topPerformers" class="list-area"></div></div>
+      <div class="box">
+        <h2>Students by sport</h2>
+        <div id="sportSummary" class="list-area"> </div>
+      </div>
+      <div class="box">
+        <h2>Top performers</h2>
+        <div id="topPerformers" class="list-area"></div>
+      </div>
     </div>
 
     <div class="page" data-page="director-coaches" hidden>
       <div class="box">
         <h2>Add coach</h2>
-        <label for="cName">Coach name</label><input id="cName"></input>
+        <label for="cName">Coach name</label>
+        <input id="cName"></input>
         <label for="cSport">Sport</label>
-        <select id="cSport"><option>Football</option><option>Cricket</option><option>Kabaddi</option><option>Volleyball</option><option>Running / Track</option><option>Other</option></select>
-        <label for="cUser">Username</label><input id="cUser" autocomplete="off">
-        <label for="cPass">Password</label><input id="cPass" type="password">
+        <select id="cSport">
+          <option>Football</option>
+          <option>Cricket</option>
+          <option>Kabaddi</option>
+          <option>Volleyball</option>
+          <option>Running / Track</option>
+          <option>Other</option>
+        </select>
+        <label for="cUser">Username</label>
+        <input id="cUser" autocomplete="off"></input>
+        <label for="cPass">Password</label>
+        <input id="cPass" type="password"></input>
         <button class="main-btn" id="addCoachBtn">Add coach</button>
       </div>
-      <div class="box"><h2>Coaches</h2><div id="directorCoachList" class="list-area"></div></div>
+      <div class="box">
+        <h2>Coaches</h2>
+        <div id="directorCoachList" class="list-area"></div>
+      </div>
     </div>
 
     <div class="page" data-page="director-students" hidden>
-      <div class="box"><h2>All students</h2><div id="directorStudentList" class="list-area"></div></div>
+      <div class="box">
+        <h2>All students</h2>
+        <div id="directorStudentList" class="list-area"></div>
+      </div>
     </div>
 
     <div class="page" data-page="director-attendance" hidden>
       <div class="box">
         <h2>Attendance report</h2>
-        <label for="reportDate">Select date</label><input id="reportDate" type="date"></input>
+        <label for="reportDate">Select date</label>
+        <input id="reportDate" type="date"></input>
         <div id="directorAttendanceReport" class="list-area"></div>
       </div>
     </div>
@@ -260,7 +326,10 @@
         <textarea id="directorNoticeText" rows="3" placeholder="Write a notice..."></textarea>
         <button class="main-btn" id="directorPostNoticeBtn">Post notice</button>
       </div>
-      <div class="box"><h2>Previous notices</h2><div id="directorNoticeList" class="list-area"></div></div>
+      <div class="box">
+        <h2>Previous notices</h2>
+        <div id="directorNoticeList" class="list-area"></div>
+      </div>
     </div>
 
     <div class="page" data-page="director-backup" hidden>
@@ -268,14 +337,16 @@
         <h2>Backup and restore</h2>
         <p class="small">Download a JSON copy of the project data or restore a previous backup.</p>
         <button class="main-btn" id="downloadBackupBtn">Download backup</button>
-        <label for="restoreFile">Restore from JSON file</label><input id="restoreFile" type="file" accept=".json,application/json">
+        <label for="restoreFile">Restore from JSON file</label>
+        <input id="restoreFile" type="file" accept=".json,application/json"></input>
       </div>
     </div>
 
     <div class="page" data-page="director-password" hidden>
       <div class="box">
         <h2>Change password</h2>
-        <label for="directorNewPassword">New password</label><input id="directorNewPassword" type="password"></input>
+        <label for="directorNewPassword">New password</label>
+        <input id="directorNewPassword" type="password"></input>
         <button class="save-password">Save</button>
       </div>
     </div>
