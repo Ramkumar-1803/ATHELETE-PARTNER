@@ -70,10 +70,31 @@ footer{text-align:center;
      padding:16px;
      margin-bottom:14px;
      box-shadow:var(--shadow)}
-.box h2{margin:0 0 12px;font-size:16px;display:flex;align-items:center;gap:8px}
-.box h2:before{content:"";width:4px;height:17px;border-radius:4px;background:var(--red)}
-.menu{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
-button{font:600 14px inherit;font-family:inherit;font-size:14px;font-weight:600;padding:9px 15px;border:1px solid var(--line);border-radius:999px;background:var(--soft);color:var(--ink);cursor:pointer;transition:filter .15s,transform .1s}
+.box h2{margin:0 0 12px;
+        font-size:16px;
+        display:flex;
+        align-items:center;
+        gap:8px}
+.box h2:before{content:"";
+               width:4px;
+               height:17px;
+               border-radius:4px;
+               background:var(--red)}
+.menu{display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-bottom:14px}
+button{font:600 14px inherit;
+       font-family:inherit;
+       font-size:14px;
+       font-weight:600;
+       padding:9px 15px;
+       border:1px solid var(--line);
+       border-radius:999px;
+       background:var(--soft);
+       color:var(--ink);
+       cursor:pointer;
+       transition:filter .15s,transform .1s}
 button:hover{filter:brightness(1.06)}
 button:active{transform:scale(.97)}
 .menu button.active,button.on{background:var(--active);border-color:var(--active);color:white}
