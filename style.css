@@ -58,7 +58,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
 .empty{color:var(--muted);padding:8px 0}
 .login-box{max-width:440px;margin:24px auto}
 .big-stat{font-size:30px;font-weight:800;color:var(--accent);margin:4px 0 12px}
-.list-area:empty:after{content:"No records available.";display:block;color:var(--muted);padding:8px 0}
+.list-area:empty:after{content:"No records available.";display:block;color:var(--muted);padding:10px 0}
 .list-area a{color:var(--accent);font-weight:700;text-decoration:none}
 .list-area a:hover{text-decoration:underline}
 @media(max-width:560px){
