@@ -6,7 +6,7 @@ const STORAGE_KEY = "athletePartnerDataV1";
 const today = () => new Date().toLocaleDateString("en-CA");
 
 const initialData = {
-  director:{username:"director",password:"1234"},
+  director:{username:"Hardik",password:"1234"},
   coaches:[{id:1,name:"Rakesh Sir",sport:"Football",username:"rakesh",password:"1111"}],
   students:[{id:1,name:"Aarav Singh",age:15,sport:"Football",height:165,weight:55,username:"aarav",password:"2222",coach:"rakesh"}],
   attendance:[{id:1,studentId:1,date:"2026-11-23",status:"Present"}],
