@@ -1,11 +1,22 @@
 /* ATHLETE PARTNER - five-colour responsive theme */
 :root {
   color-scheme: light;
-  --cream:#FDF0D5; --navy:#003049; --red:#C1121F; --dark:#780000; --sky:#669BBC;
-  --bg:var(--cream); --card:#fffaf0; --ink:var(--navy);
-  --muted:#526b78; --line:#d9d2c3; --soft:#e8edf0;
-  --accent:var(--red); --accent2:var(--sky); --active:var(--navy);
-  --good:var(--navy); --danger:var(--dark);
+  --cream:#FDF0D5;
+  --navy:#003049; 
+  --red:#C1121F;
+  --dark:#780000; 
+  --sky:#669BBC;
+  --bg:var(--cream); 
+  --card:#fffaf0; 
+  --ink:var(--navy);
+  --muted:#526b78;
+  --line:#d9d2c3;
+  --soft:#e8edf0;
+  --accent:var(--red);
+  --accent2:var(--sky); 
+  --active:var(--navy);
+  --good:var(--navy);
+  --danger:var(--dark);
   --shadow:0 3px 14px rgba(0,48,73,.12);
 }
 :root[data-theme="dark"] {
