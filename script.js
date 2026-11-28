@@ -7,8 +7,8 @@ const today = () => new Date().toLocaleDateString("en-CA");
 
 const initialData = {
   director:{username:"Hardik",password:"1234"},
-  coaches:[{id:1,name:"Rakesh Sir",sport:"Football",username:"rakesh",password:"1111"}],
-  students:[{id:1,name:"Aarav Singh",age:15,sport:"Football",height:165,weight:55,username:"aarav",password:"2222",coach:"rakesh"}],
+  coaches:[{id:1,name:"Rakesh Sir",sport:"Football",username:"Rakesh",password:"1111"}],
+  students:[{id:1,name:"Aarav Singh",age:15,sport:"Football",height:165,weight:55,username:"Aarav",password:"2222",coach:"Rakesh"}],
   attendance:[{id:1,studentId:1,date:"2026-11-23",status:"Present"}],
   scores:[{id:1,studentId:1,score:72,note:"Work on stamina",date:"2026-11-01"}],
   exercises:[],
